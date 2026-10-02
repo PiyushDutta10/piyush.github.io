@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Piyush Kumar Dutta Yadav | GIS Analyst Portfolio</title>
+
+<meta name="description"
+content="Professional portfolio of Piyush Kumar Dutta Yadav, GIS Analyst specializing in ArcGIS, QGIS, FME, Python, spatial data, QA/QC, utility mapping and GIS automation.">
+
+<meta name="keywords"
+content="GIS Analyst, GIS Engineer, ArcGIS, QGIS, FME, Python GIS, Spatial Data, GIS Automation, Bengaluru">
+
+<meta name="author" content="Piyush Kumar Dutta Yadav">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#07111f;
+  --bg2:#0b1728;
+  --card:rgba(14,28,47,.78);
+  --card2:#101f34;
+  --text:#f4f8ff;
+  --muted:#9fb0c5;
+  --line:rgba(255,255,255,.09);
+  --accent:#36d1dc;
+  --accent2:#5b8cff;
+  --green:#48e0a4;
+  --shadow:0 20px 70px rgba(0,0,0,.35);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Inter,Arial,sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%,rgba(54,209,220,.12),transparent 30%),
+    radial-gradient(circle at 85% 20%,rgba(91,140,255,.12),transparent 30%),
+    var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  overflow-x:hidden;
+}
+
+body.light{
+  --bg:#f4f8fc;
+  --bg2:#ffffff;
+  --card:rgba(255,255,255,.9);
+  --card2:#ffffff;
+  --text:#102033;
+  --muted:#607086;
+  --line:rgba(16,32,51,.1);
+  --shadow:0 20px 60px rgba(38,65,95,.15);
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+}
+
+.container{
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+  backdrop-filter:blur(18px);
+  background:rgba(7,17,31,.72);
+  border-bottom:1px solid var(--line);
+}
+
+body.light nav{
+  background:rgba(255,255,255,.82);
+}
+
+.nav-inner{
+  height:74px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-family:"Space Grotesk",sans-serif;
+  font-size:21px;
+  font-weight:700;
+}
+
+.logo span{
+  color:var(--accent);
+}
+
+.nav-links{
+  display:flex;
+  gap:27px;
+  align-items:center;
+}
+
+.nav-links a{
+  color:var(--muted);
+  font-size:14px;
+  font-weight:600;
+  transition:.25s;
+}
+
+.nav-links a:hover{
+  color:var(--accent);
+}
+
+.nav-actions{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.icon-btn{
+  width:39px;
+  height:39px;
+  border:1px solid var(--line);
+  background:var(--card);
+  color:var(--text);
+  border-radius:50%;
+  cursor:pointer;
+  font-size:17px;
+}
+
+.menu-btn{
+  display:none;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  position:relative;
+  padding-top:100px;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:70px;
+  align-items:center;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:8px 14px;
+  border:1px solid rgba(54,209,220,.3);
+  background:rgba(54,209,220,.07);
+  color:var(--accent);
+  border-radius:100px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.08em;
+  margin-bottom:22px;
+}
+
+.badge:before{
+  content:"";
+  width:8px;
+  height:8px;
+  background:var(--green);
+  border-radius:50%;
+  box-shadow:0 0 15px var(--green);
+}
+
+h1{
+  font-family:"Space Grotesk",sans-serif;
+  font-size:clamp(42px,6vw,78px);
+  line-height:1.02;
+  letter-spacing:-.045em;
+  margin-bottom:20px;
+}
+
+.gradient{
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+.hero-text{
+  max-width:690px;
+  color:var(--muted);
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+.buttons{
+  display:flex;
+  gap:13px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:13px 20px;
+  border-radius:11px;
+  border:1px solid var(--line);
+  font-weight:700;
+  font-size:14px;
+  cursor:pointer;
+  transition:.25s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+.btn-primary{
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#03101c;
+  border:none;
+  box-shadow:0 10px 30px rgba(54,209,220,.2);
+}
+
+.btn-secondary{
+  background:var(--card);
+  color:var(--text);
+}
+
+.hero-card{
+  position:relative;
+  height:420px;
+  border:1px solid var(--line);
+  border-radius:28px;
+  background:
+    linear-gradient(145deg,rgba(54,209,220,.09),rgba(91,140,255,.04)),
+    var(--card);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.map-grid{
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(54,209,220,.08) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(54,209,220,.08) 1px,transparent 1px);
+  background-size:35px 35px;
+  transform:perspective(500px) rotateX(55deg) scale(1.5);
+  transform-origin:center bottom;
+  opacity:.7;
+}
+
+.map-circle{
+  width:230px;
+  height:230px;
+  border-radius:50%;
+  border:1px solid rgba(54,209,220,.45);
+  position:relative;
+  box-shadow:
+    0 0 70px rgba(54,209,220,.1),
+    inset 0 0 60px rgba(91,140,255,.08);
+}
+
+.map-circle:before,
+.map-circle:after{
+  content:"";
+  position:absolute;
+  inset:28px;
+  border:1px dashed rgba(91,140,255,.4);
+  border-radius:50%;
+}
+
+.map-circle:after{
+  inset:65px;
+}
+
+.map-point{
+  position:absolute;
+  width:13px;
+  height:13px;
+  background:var(--accent);
+  border-radius:50%;
+  box-shadow:0 0 20px var(--accent);
+  animation:pulse 2s infinite;
+}
+
+.point1{top:22%;left:55%}
+.point2{top:55%;left:22%;animation-delay:.5s}
+.point3{top:67%;left:67%;animation-delay:1s}
+.point4{top:38%;left:76%;animation-delay:1.5s}
+
+@keyframes pulse{
+  0%,100%{transform:scale(1);opacity:1}
+  50%{transform:scale(1.7);opacity:.55}
+}
+
+.map-label{
+  position:absolute;
+  bottom:25px;
+  left:25px;
+  font-size:11px;
+  letter-spacing:.15em;
+  color:var(--muted);
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin-top:35px;
+}
+
+.stat{
+  border:1px solid var(--line);
+  background:var(--card);
+  padding:17px;
+  border-radius:14px;
+}
+
+.stat strong{
+  display:block;
+  font-size:20px;
+  font-family:"Space Grotesk";
+}
+
+.stat span{
+  color:var(--muted);
+  font-size:11px;
+}
+
+section{
+  padding:95px 0;
+}
+
+.section-head{
+  margin-bottom:38px;
+}
+
+.eyebrow{
+  color:var(--accent);
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-weight:800;
+  margin-bottom:8px;
+}
+
+h2{
+  font-family:"Space Grotesk",sans-serif;
+  font-size:clamp(30px,4vw,46px);
+  line-height:1.1;
+}
+
+.section-desc{
+  color:var(--muted);
+  max-width:700px;
+  margin-top:12px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:17px;
+}
+
+.card{
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:var(--card);
+  box-shadow:0 10px 40px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  border-color:rgba(54,209,220,.3);
+}
+
+.card h3{
+  font-size:18px;
+  margin-bottom:8px;
+}
+
+.card p,
+.card li{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.card ul{
+  padding-left:20px;
+  margin-top:12px;
+}
+
+.project{
+  margin-bottom:18px;
+}
+
+.project-meta{
+  color:var(--accent);
+  font-size:11px;
+  text-transform:uppercase;
+  font-weight:800;
+  letter-spacing:.08em;
+  margin-bottom:8px;
+}
+
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+}
+
+.skill{
+  padding:8px 13px;
+  border-radius:100px;
+  border:1px solid var(--line);
+  background:var(--card);
+  color:var(--text);
+  font-size:13px;
+  transition:.2s;
+}
+
+.skill:hover{
+  border-color:var(--accent);
+  color:var(--accent);
+}
+
+.timeline{
+  position:relative;
+  max-width:900px;
+  margin:auto;
+}
+
+.timeline:before{
+  content:"";
+  position:absolute;
+  left:9px;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:linear-gradient(var(--accent),transparent);
+}
+
+.job{
+  position:relative;
+  padding-left:42px;
+  margin-bottom:38px;
+}
+
+.job:before{
+  content:"";
+  position:absolute;
+  left:3px;
+  top:8px;
+  width:13px;
+  height:13px;
+  background:var(--accent);
+  border-radius:50%;
+  box-shadow:0 0 15px rgba(54,209,220,.7);
+}
+
+.job h3{
+  font-size:19px;
+  margin-bottom:3px;
+}
+
+.job .company{
+  color:var(--accent);
+  font-size:14px;
+  font-weight:700;
+}
+
+.job .date{
+  color:var(--muted);
+  font-size:12px;
+  margin:4px 0 8px;
+}
+
+.job p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.two{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.two ul{
+  padding-left:20px;
+}
+
+.cta{
+  text-align:center;
+  padding:60px 30px;
+  border:1px solid rgba(54,209,220,.2);
+  border-radius:25px;
+  background:
+    radial-gradient(circle at center,rgba(54,209,220,.1),transparent 65%),
+    var(--card);
+}
+
+.cta h2{
+  margin-bottom:13px;
+}
+
+.cta p{
+  color:var(--muted);
+  max-width:650px;
+  margin:0 auto 25px;
+}
+
+.contact-links{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.contact-link{
+  padding:11px 17px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:var(--card);
+  font-size:13px;
+  font-weight:600;
+  transition:.2s;
+}
+
+.contact-link:hover{
+  border-color:var(--accent);
+  color:var(--accent);
+}
+
+footer{
+  padding:35px 0;
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+  border-top:1px solid var(--line);
+}
+
+footer strong{
+  color:var(--text);
+}
+
+.reveal{
+  opacity:0;
+  transform:translateY(30px);
+  transition:.7s ease;
+}
+
+.reveal.show{
+  opacity:1;
+  transform:none;
+}
+
+#topBtn{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  border:1px solid var(--line);
+  background:var(--card);
+  color:var(--text);
+  cursor:pointer;
+  opacity:0;
+  pointer-events:none;
+  transition:.3s;
+  z-index:999;
+}
+
+#topBtn.show{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.mobile-menu{
+  display:none;
+}
+
+@media(max-width:900px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:45px;
+  }
+
+  .hero-card{
+    max-width:600px;
+    margin:auto;
+    width:100%;
+  }
+
+  .grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .stats{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:700px){
+  .nav-links{
+    display:none;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  .mobile-menu{
+    position:absolute;
+    top:74px;
+    left:0;
+    right:0;
+    background:var(--bg2);
+    border-bottom:1px solid var(--line);
+    padding:18px 5%;
+  }
+
+  .mobile-menu.active{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .mobile-menu a{
+    color:var(--muted);
+    font-weight:600;
+  }
+
+  section{
+    padding:70px 0;
+  }
+
+  .grid,
+  .two{
+    grid-template-columns:1fr;
+  }
+
+  h1{
+    font-size:45px;
+  }
+
+  .hero-text{
+    font-size:16px;
+  }
+
+  .hero-card{
+    height:330px;
+  }
+}
+
+@media(max-width:450px){
+  .stats{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .stat{
+    padding:13px;
+  }
+
+  .stat strong{
+    font-size:17px;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+}
+
+@media print{
+  nav,
+  #topBtn,
+  .buttons,
+  .contact-links,
+  .hero-card{
+    display:none !important;
+  }
+
+  body{
+    background:white;
+    color:black;
+  }
+
+  section{
+    padding:25px 0;
+  }
+
+  .card,
+  .stat{
+    background:white;
+    color:black;
+    box-shadow:none;
+    border:1px solid #ddd;
+  }
+
+  .hero{
+    min-height:auto;
+    padding-top:20px;
+  }
+
+  .hero-grid{
+    display:block;
+  }
+
+  .hero-text,
+  .card p,
+  .card li,
+  .job p,
+  .job .date,
+  .section-desc{
+    color:#444;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="container nav-inner">
+
+    <a href="#home" class="logo">
+      Piyush<span>.</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" title="Toggle theme">☾</button>
+      <button class="icon-btn menu-btn" id="menuBtn">☰</button>
+    </div>
+
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="container hero-grid">
+
+    <div class="reveal">
+
+      <div class="badge">
+        AVAILABLE FOR GIS OPPORTUNITIES
+      </div>
+
+      <h1>
+        Piyush Kumar<br>
+        <span class="gradient">Dutta Yadav</span>
+      </h1>
+
+      <p class="hero-text">
+        GIS Analyst specializing in spatial data, mapping, QA/QC,
+        GIS automation and geospatial workflows across oil & gas,
+        utility mapping, land use / land cover and property mapping.
+      </p>
+
+      <div class="buttons">
+
+        <!-- RESUME DOWNLOAD -->
+        <a
+          class="btn btn-primary"
+          href="Piyush-Kumar-Dutta-Yadav-Resume.pdf"
+          download
+        >
+          📄 Download Resume
+        </a>
+
+        <!-- LINKEDIN -->
+        <a
+          class="btn btn-secondary"
+          href="https://www.linkedin.com/in/piyushdutta10"
+          target="_blank"
+          rel="noopener"
+        >
+          💼 LinkedIn
+        </a>
+
+        <!-- EMAIL -->
+        <a
+          class="btn btn-secondary"
+          href="mailto:Piyushdutta1995@gmail.com?subject=GIS%20Job%20Opportunity"
+        >
+          ✉️ Email Me
+        </a>
+
+        <!-- PRINT -->
+        <button
+          class="btn btn-secondary"
+          onclick="window.print()"
+        >
+          🖨️ Save / Print CV
+        </button>
+
+      </div>
+
+      <div class="stats">
+
+        <div class="stat">
+          <strong>5+ yrs</strong>
+          <span>GIS Experience</span>
+        </div>
+
+        <div class="stat">
+          <strong>FME</strong>
+          <span>Automation</span>
+        </div>
+
+        <div class="stat">
+          <strong>Python</strong>
+          <span>Geospatial Processing</span>
+        </div>
+
+        <div class="stat">
+          <strong>Bengaluru</strong>
+          <span>Location</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- GIS VISUAL -->
+    <div class="hero-card reveal">
+
+      <div class="map-grid"></div>
+
+      <div class="map-circle">
+
+        <span class="map-point point1"></span>
+        <span class="map-point point2"></span>
+        <span class="map-point point3"></span>
+        <span class="map-point point4"></span>
+
+      </div>
+
+      <div class="map-label">
+        SPATIAL DATA • GIS • ANALYTICS
+      </div>
+
+    </div>
+
+  </div>
+</header>
+
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <div class="eyebrow">Profile</div>
+      <h2>About Me</h2>
+
+      <p class="section-desc">
+        GIS professional experienced in spatial data production,
+        quality control, mapping, geoprocessing and automation.
+        Focused on producing accurate, structured and client-ready
+        geospatial outputs.
+      </p>
+    </div>
+
+    <div class="two">
+
+      <div class="card reveal">
+        <h3>Professional Focus</h3>
+
+        <p>
+          Spatial data cleanup, topology validation, digitization,
+          feature extraction, georeferencing, spatial analysis,
+          mapping and GIS workflow automation.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Core Technologies</h3>
+
+        <p>
+          ArcGIS Pro, ArcGIS / ArcMap, QGIS, Safe FME, Python,
+          MS SQL Server, Global Mapper, Google Earth, AutoCAD,
+          SolidWorks, Atlassian and MS Office.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <div class="eyebrow">Capabilities</div>
+      <h2>What I Do</h2>
+    </div>
+
+    <div class="grid">
+
+      <div class="card reveal">
+        <h3>🗺️ Spatial Data QA/QC</h3>
+        <p>
+          Topology validation, overlap and gap detection,
+          attribute validation and geodatabase quality control.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <h3>📍 Digitizing & Feature Extraction</h3>
+        <p>
+          Feature extraction from orthomosaics, scanned maps
+          and imagery with structured attribute completion.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <h3>📐 Georeferencing & COGO</h3>
+        <p>
+          Georeferencing scanned maps and plans and plotting
+          metes-and-bounds descriptions using COGO.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <h3>📊 Spatial Analysis</h3>
+        <p>
+          Overlay, intersect analysis, acreage allocation,
+          spatial queries and analytical mapping.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <h3>⚙️ GIS Automation</h3>
+        <p>
+          FME workflows and Python-based processes for
+          repetitive GIS production and validation.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <h3>🗄️ Spatial Databases</h3>
+        <p>
+          Spatial data organization and relational workflows
+          using MS SQL Server.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <div class="eyebrow">Portfolio</div>
+      <h2>Selected Projects</h2>
+    </div>
+
+
+    <div class="card project reveal">
+
+      <div class="project-meta">
+        Oil & Gas · Stronghold Management
+      </div>
+
+      <h3>
+        Evaluation Tract & Well-Unit Spatial Data
+      </h3>
+
+      <p>
+        Validated and corrected oil and gas evaluation tracts,
+        unit boundaries and well data used in client-facing
+        analytics workflows.
+      </p>
+
+      <ul>
+        <li>
+          Built complex tracts and deed plots from
+          metes-and-bounds descriptions using COGO in ArcGIS Pro.
+        </li>
+
+        <li>
+          Ran spatial queries to identify units and wells
+          intersecting tracts.
+        </li>
+
+        <li>
+          Performed acreage and lateral-length based allocations.
+        </li>
+
+        <li>
+          Resolved overlaps and gaps in vector datasets and
+          cleared errors identified by automated FME validation.
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="card project reveal">
+
+      <div class="project-meta">
+        Survey of India · SVAMITVA
+      </div>
+
+      <h3>
+        Village Mapping from Drone Orthomosaics
+      </h3>
+
+      <p>
+        Feature extraction and geodatabase production for
+        village property mapping.
+      </p>
+
+      <ul>
+        <li>
+          Digitized village features from orthomosaic GeoTIFFs.
+        </li>
+
+        <li>
+          Completed attribute information and corrected topology.
+        </li>
+
+        <li>
+          Built tile packages and georeferenced scanned cadastral maps.
+        </li>
+
+        <li>
+          Validated geodatabases for server upload and exported
+          final maps to PDF.
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="card project reveal">
+
+      <div class="project-meta">
+        Property · PCS Management Consultancy
+      </div>
+
+      <h3>
+        GIS Land Inventory Audit — Kanpur Development Authority
+      </h3>
+
+      <p>
+        Combined spatial, client property and field survey data
+        into maps, charts and reports.
+      </p>
+
+      <ul>
+        <li>
+          Performed QA/QC on in-house GIS data.
+        </li>
+
+        <li>
+          Incorporated client feedback into final outputs.
+        </li>
+
+        <li>
+          Trained GIS trainees and prepared SOPs for
+          standardized digitization workflows.
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="card project reveal">
+
+      <div class="project-meta">
+        Survey of India · National Mission for Clean Ganga
+      </div>
+
+      <h3>
+        Geotagged Field Imagery Correction
+      </h3>
+
+      <p>
+        Corrected coordinates in geotagged point data and images
+        using reference orthophotos and delivered final outputs
+        according to client specifications.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <div class="eyebrow">Technology</div>
+      <h2>Skills & Tools</h2>
+    </div>
+
+    <div class="skills reveal">
+
+      <span class="skill">ArcGIS Pro</span>
+      <span class="skill">ArcGIS / ArcMap</span>
+      <span class="skill">QGIS</span>
+      <span class="skill">Safe FME</span>
+      <span class="skill">Python</span>
+      <span class="skill">MS SQL Server</span>
+      <span class="skill">Global Mapper</span>
+      <span class="skill">Google Earth</span>
+      <span class="skill">AutoCAD</span>
+      <span class="skill">SolidWorks</span>
+      <span class="skill">Atlassian</span>
+      <span class="skill">MS Office</span>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+
+    <div class="section-head reveal">
+      <div class="eyebrow">Career</div>
+      <h2>Professional Experience</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="job reveal">
+
+        <h3>GIS Analyst</h3>
+
+        <div class="company">
+          Stronghold Management India
+        </div>
+
+        <div class="date">
+          Feb 2025 – Present · Bengaluru
+        </div>
+
+        <p>
+          Oil and gas spatial data, QA/QC, automation and
+          end-to-end GIS support for internal teams and
+          external clients.
+        </p>
+
+      </div>
+
+
+      <div class="job reveal">
+
+        <h3>GIS Expert</h3>
+
+        <div class="company">
+          PCS Management Consultancy
+        </div>
+
+        <div class="date">
+          Mar 2024 – Jan 2025 · Lucknow
+        </div>
+
+        <p>
+          Land inventory audit, QA/QC, field survey coordination
+          and GIS team training.
+        </p>
+
+      </div>
+
+
+      <div class="job reveal">
+
+        <h3>Jr. GIS Engineer</h3>
+
+        <div class="company">
+          GeoVista Technologies
+        </div>
+
+        <div class="date">
+          Mar 2023 – Oct 2023 · Hyderabad
+        </div>
+
+        <p>
+          Utility network mapping, LULC base-map vetting
+          and survey data correction.
+        </p>
+
+      </div>
+
+
+      <div class="job reveal">
+
+        <h3>Assistant Engineer</h3>
+
+        <div class="company">
+          Brain Bridge Technical Center · MP Geospatial Data Centre,
+          Survey of India
+        </div>
+
+        <div class="date">
+          Jul 2021 – Feb 2023 · Jabalpur
+        </div>
+
+        <p>
+          SVAMITVA village mapping using drone orthomosaics,
+          feature extraction and geospatial data production.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CERTIFICATIONS + EDUCATION -->
+<section>
+  <div class="container">
+
+    <div class="two">
+
+      <div class="card reveal">
+
+        <div class="eyebrow">Learning</div>
+
+        <h2 style="font-size:30px;margin-bottom:20px;">
+          Certifications
+        </h2>
+
+        <ul>
+
+          <li>
+            Integrate Data with the FME Platform —
+            FME Academy
+          </li>
+
+          <li>
+            Spatial Data Science: The New Frontier in Analytics —
+            Esri
+          </li>
+
+          <li>
+            Basics of Remote Sensing, GIS, GNSS and Applications —
+            IIRS Dehradun
+          </li>
+
+          <li>
+            Geodata Processing using Python —
+            IIRS Dehradun
+          </li>
+
+          <li>
+            SolidWorks — Design Cluster, Indore
+          </li>
+
+          <li>
+            AutoCAD — E CADD Services
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="card reveal">
+
+        <div class="eyebrow">Education</div>
+
+        <h2 style="font-size:30px;margin-bottom:20px;">
+          Qualification
+        </h2>
+
+        <h3>
+          B.E. Mechanical Engineering
+        </h3>
+
+        <p>
+          Rajiv Gandhi Proudyogiki Vishwavidyalaya,
+          Bhopal
+        </p>
+
+        <br>
+
+        <p>
+          Professional GIS experience combined with
+          geospatial technology, mapping, engineering and
+          spatial-data workflows.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- RECRUITER CTA -->
+<section id="contact">
+
+  <div class="container">
+
+    <div class="cta reveal">
+
+      <div class="eyebrow">
+        Recruiter / Hiring Manager
+      </div>
+
+      <h2>
+        Let's Discuss a GIS Opportunity
+      </h2>
+
+      <p>
+        Looking for a GIS professional for spatial data,
+        mapping, QA/QC, GIS automation, FME or Python-based
+        geospatial workflows? Let's connect.
+      </p>
+
+
+      <div class="buttons" style="justify-content:center;">
+
+        <!-- DOWNLOAD -->
+        <a
+          class="btn btn-primary"
+          href="Piyush-Kumar-Dutta-Yadav-Resume.pdf"
+          download
+        >
+          📄 Download My Resume
+        </a>
+
+        <!-- EMAIL -->
+        <a
+          class="btn btn-secondary"
+          href="mailto:Piyushdutta1995@gmail.com?subject=GIS%20Job%20Opportunity%20-%20Piyush%20Kumar%20Dutta%20Yadav"
+        >
+          ✉️ Contact Me
+        </a>
+
+        <!-- LINKEDIN -->
+        <a
+          class="btn btn-secondary"
+          href="https://www.linkedin.com/in/piyushdutta10"
+          target="_blank"
+          rel="noopener"
+        >
+          💼 View LinkedIn
+        </a>
+
+      </div>
+
+
+      <div class="contact-links" style="margin-top:25px;">
+
+        <a
+          class="contact-link"
+          href="mailto:Piyushdutta1995@gmail.com"
+        >
+          Piyushdutta1995@gmail.com
+        </a>
+
+        <a
+          class="contact-link"
+          href="https://www.linkedin.com/in/piyushdutta10"
+          target="_blank"
+          rel="noopener"
+        >
+          linkedin.com/in/piyushdutta10
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <div class="container">
+
+    <p>
+      © <span id="year"></span>
+      <strong>Piyush Kumar Dutta Yadav</strong>.
+      All Rights Reserved.
+    </p>
+
+    <p style="margin-top:5px;">
+      GIS Analyst · Spatial Data · GIS Automation
+    </p>
+
+  </div>
+
+</footer>
+
+
+<!-- BACK TO TOP -->
+<button id="topBtn">↑</button>
+
+
+<script>
+
+/* =========================
+   CURRENT YEAR
+========================= */
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+
+/* =========================
+   THEME TOGGLE
+========================= */
+
+const themeBtn =
+  document.getElementById("themeBtn");
+
+themeBtn.addEventListener("click", () => {
+
+  document.body.classList.toggle("light");
+
+  if(document.body.classList.contains("light")){
+    themeBtn.textContent = "☀";
+    localStorage.setItem("theme","light");
+  }else{
+    themeBtn.textContent = "☾";
+    localStorage.setItem("theme","dark");
+  }
+
+});
+
+
+/* =========================
+   LOAD SAVED THEME
+========================= */
+
+if(localStorage.getItem("theme") === "light"){
+
+  document.body.classList.add("light");
+  themeBtn.textContent = "☀";
+
+}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+const menuBtn =
+  document.getElementById("menuBtn");
+
+const mobileMenu =
+  document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+
+  mobileMenu.classList.toggle("active");
+
+  menuBtn.textContent =
+    mobileMenu.classList.contains("active")
+    ? "✕"
+    : "☰";
+
+});
+
+
+/* CLOSE MOBILE MENU */
+
+document.querySelectorAll(".mobile-menu a")
+.forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    mobileMenu.classList.remove("active");
+    menuBtn.textContent = "☰";
+
+  });
+
+});
+
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+const observer =
+  new IntersectionObserver(
+    entries => {
+
+      entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+          entry.target.classList.add("show");
+
+        }
+
+      });
+
+    },
+    {
+      threshold:.12
+    }
+  );
+
+
+document.querySelectorAll(".reveal")
+.forEach(el => observer.observe(el));
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+const topBtn =
+  document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+
+  if(window.scrollY > 500){
+
+    topBtn.classList.add("show");
+
+  }else{
+
+    topBtn.classList.remove("show");
+
+  }
+
+});
+
+
+topBtn.addEventListener("click", () => {
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+
+});
+
+
+/* =========================
+   CARD TILT EFFECT
+========================= */
+
+document.querySelectorAll(".card")
+.forEach(card => {
+
+  card.addEventListener("mousemove", e => {
+
+    const rect =
+      card.getBoundingClientRect();
+
+    const x =
+      e.clientX - rect.left;
+
+    const y =
+      e.clientY - rect.top;
+
+    const centerX =
+      rect.width / 2;
+
+    const centerY =
+      rect.height / 2;
+
+    const rotateX =
+      ((y-centerY)/centerY)*2;
+
+    const rotateY =
+      ((x-centerX)/centerX)*-2;
+
+    card.style.transform =
+      `perspective(800px)
+       rotateX(${rotateX}deg)
+       rotateY(${rotateY}deg)
+       translateY(-4px)`;
+
+  });
+
+
+  card.addEventListener("mouseleave", () => {
+
+    card.style.transform = "";
+
+  });
+
+});
+
+
+/* =========================
+   DOWNLOAD RESUME TRACKING
+========================= */
+
+document.querySelectorAll(
+  'a[download]'
+).forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    console.log(
+      "Resume download initiated"
+    );
+
+  });
+
+});
+
+
+/* =========================
+   SMOOTH INTERNAL LINKS
+========================= */
+
+document.querySelectorAll(
+  'a[href^="#"]'
+).forEach(anchor => {
+
+  anchor.addEventListener("click", function(e){
+
+    const target =
+      document.querySelector(
+        this.getAttribute("href")
+      );
+
+    if(target){
+
+      e.preventDefault();
+
+      target.scrollIntoView({
+        behavior:"smooth",
+        block:"start"
+      });
+
+    }
+
+  });
+
+});
+
+</script>
+
+</body>
+</html>
